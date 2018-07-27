@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Text from "./components/text";
 import Form from "./components/form";
+import Footer from "./components/footer";
 class App extends Component {
   state = {
     name: "Francisco",
@@ -35,11 +36,13 @@ class App extends Component {
     const colorName = this.state.colors[this.state.selected].name;
     return (
       <div className="app" style={{ background: backgroundColor }}>
+        <h1 className="open-sans">Reactive colors</h1>
         <Text name={this.state.name} color={colorName} />
         <Form
           onChangeName={this.handleNameChange}
           onChangeSelected={this.handleColorChange}
         />
+        <Footer />
       </div>
     );
   }

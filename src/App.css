@@ -10,8 +10,15 @@
   color: white;
 }
 
-.text {
+h1 {
+  font-size: 3rem;
+}
+
+.open-sans {
   font-family: 'Open Sans', sans-serif;
+}
+
+.text {
   font-size: 3rem;
   display: flex;
   justify-content: center;
