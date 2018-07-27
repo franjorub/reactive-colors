@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 1000ms ease-in-out;
+  color: white;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+
+.text span {
+  text-decoration: underline;
+  font-style: italic;
+  padding: 0 15px;
+}
+
+.form {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
+  width: 75%;
+  flex-wrap: wrap;
+}
+
+.form label {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.styled-select {
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+  margin: 0 10px;
+}
+
+.styled-select select {
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
+}
+
+.styled-select.slate {
+  height: 34px;
+  width: 240px;
+}
+
+.styled-select.slate select {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 34px;
+  width: 268px;
+}
